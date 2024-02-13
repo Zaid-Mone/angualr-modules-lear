@@ -1,0 +1,45 @@
+<!--For all screen-->
+<div class="page">
+
+
+  <!--Login & Signup in single row-->
+  <div class="row">
+
+
+    <!--Column for signin-->
+    <div class="col-sm-8 text-center signin">
+
+
+      <!-- Default form login -->
+      <form action="#!">
+        <p class="h4 mb-4 text-center signintext top"><strong>Sign in to this Website</strong></p>
+
+        <p class="text-center signintext">Or use your Email account</p>
+
+        <!-- Email -->
+        <input type="email" class="form-control mb-4" placeholder="&#xf0e0; Email" style="font-family:Arial, FontAwesome">
+
+        <!-- Password -->
+        <input type="password" class="form-control mb-4" placeholder="&#xf023;  Password" style="font-family:Arial, FontAwesome">
+
+
+
+        <!-- Sign in button -->
+        <a class="ForgotPassBtn" href="">Forgot Your Password?</a>
+        <a class="ForgotPassBtn" [routerLink]="['/home']">Back</a>
+        <button class="btn btn-info btn-block LoginBtn" type="submit">Login</button>
+
+
+      </form>
+
+    </div>
+
+    <!--Column for signin-->
+    <div class="col-sm-4 signup text-center">
+      <h2 class="HelloFriend">Hello, Friend!</h2>
+      <h4 class="SignupText">Enter your personal details<br>and start journey with us</h4>
+  
+
+    </div>
+  </div>
+</div>

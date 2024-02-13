@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent, title: 'Home page' },
   { path: 'admin', loadChildren: () => import('./modules/admin/admin.module').then(a => a.AdminModule), canActivate: [authGuard] },
+  { path: 'login', loadChildren: () => import('./modules/auth/auth.module').then(a => a.AuthModule), canActivate: [authGuard] },
   { path: '**', component: Error404Component, title: 'Error Page' }
 ];
 

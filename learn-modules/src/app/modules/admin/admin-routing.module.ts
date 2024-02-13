@@ -8,11 +8,11 @@ const routes: Routes = [
   {
     
     path: '',
-    component: AdminDashboardComponent,
+    component: HomeComponent ,
     children: [
-      { path: 'home', component: HomeComponent },
+      { path: 'admin-dashboard', component:  AdminDashboardComponent},
       { path: 'users', component: UsersComponent },
-      { path: '', redirectTo: '/admin/home', pathMatch: 'full' },
+      { path: '', redirectTo: '/admin/admin-dashboard', pathMatch: 'full' },
     ],
   },
   

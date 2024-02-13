@@ -5,13 +5,17 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { AdminDashboardComponent } from './componetns/admin-dashboard/admin-dashboard.component';
 import { HomeComponent } from './componetns/home/home.component';
 import { UsersComponent } from './componetns/users/users.component';
+import { HeaderComponent } from '../layout/components/header/header.component';
+import { FooterComponent } from '../layout/components/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AdminDashboardComponent,
     HomeComponent,
-    UsersComponent
+    UsersComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
